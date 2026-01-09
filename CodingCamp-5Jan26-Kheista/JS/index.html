@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To Do Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat purple">
+      <p>Total Tasks</p>
+        <h2 id="totalTasks">0</h2>
+    </div>
+
+    <div class="stat green">
+      <p>Completed</p>
+        <h2 id="completedTasks">0</h2>
+    </div>
+
+    <div class="stat yellow">
+      <p>Pending</p>
+        <h2 id="pendingTasks">0</h2>
+    </div>
+
+    <div class="stat blue">
+      <p>Progress</p>
+        <h2 id="progressPercent">0%</h2>
+    </div>
+  </div>
+
+  <!-- ADD TODO -->
+  <div class="add-todo">
+    <input type="text" id="taskInput" placeholder="Add a to do..." />
+    <input type="date" id="dateInput" class="date-input" />
+    <button class="add-btn" id="addBtn">+</button>
+  </div>
+
+
+  <!-- SEARCH & FILTER -->
+  <div class="tools">
+  <input type="text" id="searchInput" placeholder="Search tasks... (Ctrl+F)" />
+  <button class="filter-btn" id="filterBtn">Filter</button>
+  </div>
+
+  <!-- ACTION BAR -->
+  <div class="action-bar">
+    <span class="sort">Sort</span>
+    <button class="delete-btn" id="deleteAllBtn">Delete All</button>
+  </div>
+
+  <!-- TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th style="color: azure;">Task</th>
+        <th style="color: azure;">Due Date</th>
+        <th style="color: azure;">Status</th>
+        <th style="color: azure;">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="taskList">
+      <tr class="empty">
+        <td colspan="4">No tasks found</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

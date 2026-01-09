@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: azure;
+  padding: 40px;
+}
+
+.container {
+  background-color:steelblue ;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(162, 185, 255, 0.05);
+}
+
+/* STATS */  
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  padding: 16px;
+  width: 25%;
+  border-radius: 16px;
+  background: white;
+}
+
+.stat p {
+  font-size: 8px;
+  margin-bottom: 6px;
+}
+
+.stat h2 {
+  font-size: 16px;
+}
+
+.purple { color: black; }
+.green { color: black; }
+.yellow { color: black; }
+.blue { color: black; }
+
+/* ADD TODO */
+.add-todo {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.add-todo input,
+.add-todo select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.add-btn {
+  width: 48px;
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* TOOLS */
+.tools {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tools input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.filter-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+/* ACTION BAR */
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.delete-btn {
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.empty td {
+  text-align: center;
+  color: #999;
+}
